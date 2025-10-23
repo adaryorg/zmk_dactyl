@@ -87,5 +87,27 @@
                                          &trans          &trans  &trans  &trans
             >;
         };
+
+        both_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans                                                  &trans  &trans
+                                &trans  &trans                  &trans  &trans
+                                        &trans  &trans  &trans  &trans
+                                        &trans  &trans  &trans  &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        both {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
     };
 };
