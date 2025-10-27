@@ -24,4 +24,4 @@ Make sure to flash the correct controller with the correct firmware. Flashing ni
 
 When changing the keymap in theory its enough to reflash the dongle only, but i prefer to reflash all the components.
 
-BOM and full build instructions will be published soon!
+BOM and full build instructions avilable at https://github.com/adaryorg/dactyl
